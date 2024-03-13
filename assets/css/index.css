@@ -1,0 +1,158 @@
+
+
+/*General Styles*/
+body {
+  padding-top: 60px;
+}
+
+.product-img
+{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Hero Section*/
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+
+/*NavBar Styles*/
+
+.navbarTitle {
+  font-weight: bold;
+}
+.cart-btn {
+  background-color: transparent;
+  position: relative;
+}
+
+.cart-quantity {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+ 
+  border-radius: 3px;
+  color: white;
+
+}
+
+.cart-icon {
+  width: 2rem;
+}
+.myNav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+
+
+/*Cars Section*/
+.cars-section {
+  padding-top: 3rem;
+}
+
+
+/* Default styles for all screens */
+/* Media query for screens with a maximum width of 767px (typically smartphones) */
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Media query for screens with a minimum width of 768px and a maximum width of 991px (typically tablets in portrait mode) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* Media query for screens with a minimum width of 1200px and a maximum width of 1439px (small desktop screens) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+/* Media query for screens with a minimum width of 1440px and above (large desktop screens) */
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+/*About Section*/
+.about-section {
+  background-color: rgb(222, 245, 222);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about-section .container-sm {
+  height: 600px;
+  background-color: rgb(255, 255, 245);
+}
+
+.about-container {
+  background-color: rgb(255, 255, 245);
+
+}
+
+
+
+/*Footer*/
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.footer a {
+  text-decoration: none;
+  
+}
+
